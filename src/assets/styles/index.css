@@ -13,8 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   /*Custom theming*/
-  --bs-body-bg: #8d0020;
+  --bs-body-bg: #8d0000;
   --bs-body-color: #ffffff;
+  --bs-secondary-bg: #800020;
+  --bs-secondary-bg-rgb: 128, 0, 32;
   --bs-emphasis-color: #ffffff;
   --bs-emphasis-color-rgb: 255, 255, 255;
 
@@ -30,6 +32,11 @@ body,
   background-color: var(--bs-body-bg);
 }
 
-.custom-footer {
-  margin-top: auto;
+.focus-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }

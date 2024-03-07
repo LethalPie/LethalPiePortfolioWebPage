@@ -5,7 +5,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Navigation() {
   return (
-    <Navbar expand="md">
+    <Navbar expand="md" className="bg-body-secondary">
       <Container>
         <Navbar.Brand href="#home" className="fw-bold">
           LETHAL PIE

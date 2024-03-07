@@ -21,8 +21,8 @@ function App() {
           <Route key={route.path} path={route.path} element={route.element}>
             {route.children.map((child) => (
               <Route
-                key={child.path}
-                path={child.path}
+                key={child.index ? "index" : child.path}
+                path={child.index ? "" : child.path}
                 element={child.element}
               />
             ))}

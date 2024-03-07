@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Container fluid className="custom-footer text-center">
+    <Container fluid className="text-center">
       <footer>Footer</footer>
     </Container>
   );
