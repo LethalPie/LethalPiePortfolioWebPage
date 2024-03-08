@@ -1,11 +1,10 @@
 import React from "react";
+import TextTyping from "../Common/TextTyping";
 
 const HomeBanner: React.FC = () => {
   return (
     <h1 className="ms-4">
-      Hello,
-      <br />
-      I'm Eliphalet
+      <TextTyping textToType={`Hello, I'm Eliphalet`} typespeed={100} />
     </h1>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Col } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
+import { Container, Row, Col } from "react-bootstrap";
 import javascript from "../../assets/lang-logos/javascript.svg";
 import typescript from "../../assets/lang-logos/typescript.svg";
 import react from "../../assets/lang-logos/react.svg";
@@ -15,7 +14,6 @@ import python from "../../assets/lang-logos/python.svg";
 import andriodStudio from "../../assets/lang-logos/andriodStudio.svg";
 
 const Skills: React.FC = () => {
-  // intatiate the skills array
   const skillArray = [
     javascript,
     typescript,
@@ -33,8 +31,7 @@ const Skills: React.FC = () => {
 
   return (
     <Col className="d-flex flex-column justify-content-center text-center">
-      <h2>My Skills</h2>
-      <Container fluid className="d-flex justify-content-evenly">
+      <Row className="mt-4">
         {skillArray.map((skill, index) => {
           return (
             <Col
@@ -50,7 +47,7 @@ const Skills: React.FC = () => {
             </Col>
           );
         })}
-      </Container>
+      </Row>
     </Col>
   );
 };
