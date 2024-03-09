@@ -1,0 +1,10 @@
+.logo-image {
+  width: 75%;
+
+  opacity: 1;
+  transition: opacity 2s ease-out;
+}
+
+.logo-image.loaded {
+  opacity: 0;
+}
