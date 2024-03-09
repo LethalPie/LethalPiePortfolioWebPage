@@ -22,15 +22,14 @@ const About: React.FC = () => {
           <Col md={1} />
           <Col md={6}>
             <Container>
-              <TextTyping
-                textToType="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          euismod, nisl vel ultrices tincidunt, velit nunc tincidunt urna, id
-          lacinia nunc nisl id nunc. Sed auctor, nunc id tincidunt tincidunt,
-          mauris nunc lacinia nunc, nec ultrices nunc nunc nec nunc. Sed auctor,
-          nunc id tincidunt tincidunt, mauris nunc lacinia nunc, nec ultrices
-          nunc nunc nec nunc."
-                typespeed={1}
-              />
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                euismod, nisl vel ultrices tincidunt, velit nunc tincidunt urna,
+                id lacinia nunc nisl id nunc. Sed auctor, nunc id tincidunt
+                tincidunt, mauris nunc lacinia nunc, nec ultrices nunc nunc nec
+                nunc. Sed auctor, nunc id tincidunt tincidunt, mauris nunc
+                lacinia nunc, nec ultrices nunc nunc nec nunc."
+              </p>
             </Container>
           </Col>
           <Col md={1} />
