@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import useElementOnScreen from "../../hooks/useElementOnScreen";
-import TextTyping from "../Common/TextTyping";
+import AboutMeText from "../../data/AboutMe.txt";
 import PFP from "../../assets/PFP.png";
 
 const About: React.FC = () => {
+  const [text, setText] = useState("");
+
   const { containerRef, isIntersecting } = useElementOnScreen({
     root: null,
     rootMargin: "0px",
     threshold: 0,
   });
+
+  useEffect(() => {
+    fetch(AboutMeText)
+      .then((r) => r.text())
+      .then((data) => {
+        setText(data);
+      });
+  }, []);
 
   return (
     <Container ref={containerRef}>
@@ -21,16 +31,9 @@ const About: React.FC = () => {
           </Col>
           <Col md={1} />
           <Col md={6}>
-            <Container>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod, nisl vel ultrices tincidunt, velit nunc tincidunt urna,
-                id lacinia nunc nisl id nunc. Sed auctor, nunc id tincidunt
-                tincidunt, mauris nunc lacinia nunc, nec ultrices nunc nunc nec
-                nunc. Sed auctor, nunc id tincidunt tincidunt, mauris nunc
-                lacinia nunc, nec ultrices nunc nunc nec nunc."
-              </p>
-            </Container>
+            {text.split("\n").map((line) => (
+              <p>{line}</p>
+            ))}
           </Col>
           <Col md={1} />
         </Row>
