@@ -37,17 +37,12 @@ const HomeProjects: React.FC = () => {
                     <Card.Img variant="top" src="https://placehold.co/100x70" />
                     <Card.Body>
                       <Card.Title>
-                        <TextTyping
-                          textToType={project}
-                          typespeed={3}
-                          disableCursor
-                        />
+                        <TextTyping textToType={project} typeSpeed={3} />
                       </Card.Title>
                       <Card.Text>
                         <TextTyping
                           textToType="This is a card with supporting text below as a natural lead-in to additional content."
-                          typespeed={3}
-                          disableCursor
+                          typeSpeed={3}
                         />
                       </Card.Text>
                       <Button variant="primary">See More</Button>

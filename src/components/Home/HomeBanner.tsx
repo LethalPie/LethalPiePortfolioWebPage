@@ -5,18 +5,16 @@ import "../../assets/styles/HomeBanner.css";
 import lethalPieLogo from "../../assets/LogoPlaceholder.png";
 
 const HomeBanner: React.FC = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  const handleLoad = () => {
-    setLoaded(true);
-  };
-
   return (
     <Row>
       <Col md={1} />
       <Col md={6} className="d-flex flex-column justify-content-center">
         <h1 className="ms-4">
-          <TextTyping textToType={`Hello,\nI'm Eliphalet`} typespeed={70} />
+          <TextTyping
+            textToType={`Heello,\nI'm LethalPie`}
+            typeSpeed={70}
+            bannerText={"EEliplalet"}
+          />
         </h1>
       </Col>
       <Col md={5}>
