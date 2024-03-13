@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout.tsx";
 import Home from "./pages/Home.tsx";
+import Projects from "./pages/Projects.tsx";
+import Project from "./pages/Project.tsx";
 
 function App() {
   const routes = [
@@ -10,6 +12,9 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "home", element: <Home /> },
+        { path: "projects", element: <Projects /> },
+        { path: "project", element: <Projects /> },
+        { path: "project/:id", element: <Project /> },
       ],
     },
   ];

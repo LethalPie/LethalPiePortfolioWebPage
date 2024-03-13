@@ -19,15 +19,19 @@
   --bs-secondary-bg-rgb: 128, 0, 32;
   --bs-emphasis-color: #ffffff;
   --bs-emphasis-color-rgb: 255, 255, 255;
+  --bs-btn-bg: #444444;
 
   --bs-font-sans-serif: "Kode mono";
 }
 
-body,
-#root {
+.app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
   background-color: var(--bs-body-bg);
+}
+
+.btn-primary {
+  background-color: var(--bs-btn-bg);
 }

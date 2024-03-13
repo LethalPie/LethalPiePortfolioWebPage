@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": "0",
+      "title": "Project 1",
+      "short-description": "This is the first project",
+      "thumbnail": "https://placehold.co/100x70",
+      "tags": ["tag1", "tag2"],
+      "long-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae semper nunc. Sed auctor, nisl id ultrices tincidunt, velit nunc ultrices nunc, non consequat nisl nunc auctor nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae semper nunc. Sed auctor, nisl id ultrices tincidunt, velit nunc ultrices nunc, non consequat nisl nunc auctor nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae semper nunc. Sed auctor, nisl id ultrices tincidunt, velit nunc ultrices nunc, non consequat nisl nunc auctor nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae semper nunc. Sed auctor, nisl id ultrices tincidunt, velit nunc ultrices nunc, non consequat nisl nunc auctor nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae semper nunc. Sed auctor, nisl id ultrices tincidunt, velit nunc ultrices nunc, non consequat nisl nunc auctor nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae semper nunc. Sed auctor, nisl id ultrices tincidunt, velit nunc ultrices nunc, non consequat nisl nunc auctor nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc. Sed id nunc auctor, aliquam mauris id, aliquam nunc.\n"
+    },
+    {
+      "id": "1",
+      "title": "Project 2",
+      "short-description": "This is the second project",
+      "thumbnail": "https://placehold.co/100x70",
+      "tags": ["tag3", "tag4"]
+    },
+    {
+      "id": "2",
+      "title": "Project 3",
+      "short-description": "This is the third project",
+      "thumbnail": "https://placehold.co/100x70",
+      "tags": ["tag5", "tag6"]
+    },
+    {
+      "id": "3",
+      "title": "Project 4",
+      "short-description": "This is the fourth project",
+      "thumbnail": "https://placehold.co/100x70",
+      "tags": ["tag7", "tag8"]
+    }
+  ]
+}
