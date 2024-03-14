@@ -5,8 +5,9 @@ import { Container } from "react-bootstrap";
 
 const Layout = () => {
   return (
-    <Container fluid className="app p-0">
+    <Container fluid className="app p-0 d-flex">
       <Navigation />
+      <Container id="nav-buffer" />
       <Outlet />
       <Footer />
     </Container>

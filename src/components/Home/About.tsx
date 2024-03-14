@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Container, Image } from "react-bootstrap";
-import useElementOnScreen from "../../hooks/useElementOnScreen";
+import { Row, Col, Image } from "react-bootstrap";
 import AboutMeText from "../../data/AboutMe.txt";
 import PFP from "../../assets/PFP.png";
 
 const About: React.FC = () => {
   const [text, setText] = useState("");
-
-  const { containerRef, isIntersecting } = useElementOnScreen({
-    root: null,
-    rootMargin: "0px",
-    threshold: 0,
-  });
 
   useEffect(() => {
     fetch(AboutMeText)
@@ -22,23 +15,23 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <Container ref={containerRef}>
-      {isIntersecting && (
-        <Row>
-          <Col md={1} />
-          <Col md={3}>
-            <Image src={PFP} fluid />
-          </Col>
-          <Col md={1} />
-          <Col md={6}>
-            {text.split("\n").map((line) => (
-              <p>{line}</p>
-            ))}
-          </Col>
-          <Col md={1} />
-        </Row>
-      )}
-    </Container>
+    <>
+      <Row />
+      <Row>
+        <Col md={1} className="d-none d-md-block" />
+        <Col md={3} className="justify-content-xs-center">
+          <Image src={PFP} fluid className="mb-4" />
+        </Col>
+        <Col md={1} />
+        <Col md={6}>
+          {text.split("\n").map((line) => (
+            <p>{line}</p>
+          ))}
+        </Col>
+        <Col md={1} className="d-none d-md-block" />
+      </Row>
+      <hr className="d-sm-block d-md-none" />
+    </>
   );
 };
 

@@ -3,21 +3,23 @@ h1 {
 }
 
 .head-section {
-  min-height: 95vh;
+  min-height: 85vh;
 }
 
 .about-section {
-  min-height: 70vh;
+  min-height: 95vh;
 }
 
 .project-section {
   min-height: 65vh;
 }
 
-.skill-section {
-  min-height: 35vh;
-}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
 
-.contact-section {
-  min-height: 20vh;
+  .head-section {
+    min-height: 15vh;
+  }
 }

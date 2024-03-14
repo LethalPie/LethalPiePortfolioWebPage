@@ -20,8 +20,18 @@
   --bs-emphasis-color: #ffffff;
   --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-btn-bg: #444444;
+  --bs-link-color: #ffffff;
+  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-hover-color: #c0c0c0;
+  --bs-link-hover-color-rgb: 192, 192, 192;
 
   --bs-font-sans-serif: "Kode mono";
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    display: none;
+  }
 }
 
 .app {
@@ -32,6 +42,6 @@
   background-color: var(--bs-body-bg);
 }
 
-.btn-primary {
-  background-color: var(--bs-btn-bg);
+#nav-buffer {
+  height: 75px;
 }
