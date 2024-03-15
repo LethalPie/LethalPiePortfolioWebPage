@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "boostrap": "^2.0.0",
     "bootstrap": "^5.3.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
@@ -18,9 +17,11 @@
     "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
+    "@types/node": "^20.11.27",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@types/react-router-hash-link": "^2.4.9",
+    "@types/webpack-env": "^1.18.4",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",

@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import TextTyping from "../Common/TextTyping";
 import "../../assets/styles/HomeBanner.css";
-import lethalPieLogo from "../../assets/LogoPlaceholder.png";
+import lethalPieLogo from "/assets/common/Logo.png";
 
 const HomeBanner: React.FC = () => {
   return (
@@ -15,9 +15,9 @@ const HomeBanner: React.FC = () => {
       >
         <h1 className="ms-4">
           <TextTyping
-            textToType={`Heello,\nI'm LethalPie`}
+            textToType={`Hello,\nI'm LethalPie`}
             typeSpeed={70}
-            bannerText={"EEliplalet"}
+            bannerText={"Eliphalet"}
           />
         </h1>
       </Col>

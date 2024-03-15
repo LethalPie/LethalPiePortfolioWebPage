@@ -5,7 +5,7 @@ import ProjectData from "../../data/projectData.json";
 import ProjectCard from "../Common/ProjectCard";
 
 const HomeProjects: React.FC = () => {
-  const recentProjects = ProjectData.projects.slice(-4);
+  const recentProjects = [...ProjectData.projects].slice(-4).reverse();
 
   return (
     <Container>
@@ -27,6 +27,7 @@ const HomeProjects: React.FC = () => {
                 title={project.title}
                 description={project["short-description"]}
                 imageUrl={project.thumbnail}
+                date={project.date}
               />
             </Col>
           );

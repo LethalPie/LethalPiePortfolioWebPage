@@ -15,7 +15,6 @@ const TextTyping: React.FC<TextTypingProps> = ({
 
   const pauseTimer = (pauseLimit: number) =>
     new Promise((resolve) => {
-      console.log("pauseTimer called");
       let counter = 0;
       const intervalId = setInterval(() => {
         setText((prevText) => {
@@ -26,7 +25,7 @@ const TextTyping: React.FC<TextTypingProps> = ({
           }
         });
         counter++;
-        if (counter === pauseLimit * 2) {
+        if (counter === pauseLimit) {
           clearInterval(intervalId);
           resolve("Interval finished");
         }
@@ -36,13 +35,12 @@ const TextTyping: React.FC<TextTypingProps> = ({
   const typeText = (text: string) =>
     new Promise((resolve) => {
       //TODO: Fix why i = 1 not runnning
-      console.log("typeText called");
       let i = 0;
+      setText((prevText) => prevText + text[i] + "|");
       const typeTimer = setInterval(() => {
         if (i < text.length - 1) {
           setText((prevText) => {
-            prevText = i === 0 ? "" : prevText.slice(0, -1);
-            return prevText + text[i] + "|";
+            return prevText.slice(0, -1) + text[i] + "|";
           });
           i++;
         } else {
@@ -54,10 +52,10 @@ const TextTyping: React.FC<TextTypingProps> = ({
 
   const backspaceText = (backspaceLength: number) =>
     new Promise((resolve) => {
-      console.log("backspaceText called");
       let i = 0;
+      // text[-1] !== "|" && setText((prevText) => prevText + "|");
       const backspaceTimer = setInterval(() => {
-        if (i < backspaceLength - 1) {
+        if (i < backspaceLength) {
           setText((prevText) => prevText.slice(0, -2) + "|");
           i++;
         } else {

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "../assets/styles/Contact.css";
-import LinkedInSVG from "../assets/linkedin.svg";
-import EmailImage from "../assets/Email.png";
+import LinkedInSVG from "/assets/contact/linkedin.svg";
+import EmailImage from "/assets/contact/Email.png";
 
 const Contact: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
           </p>
           <p>
             <Image src={LinkedInSVG} className="inline-image me-2" />
-            <a href="#">Eli Read</a>
+            <a href="www.linkedin.com/in/eliphalet">Eli Read</a>
           </p>
         </Col>
         <Col md={5} xs={0} />

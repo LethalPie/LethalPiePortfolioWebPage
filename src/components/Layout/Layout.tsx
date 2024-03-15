@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import { Container } from "react-bootstrap";
+import "../../assets/styles/Layout.css";
 
 const Layout = () => {
   return (

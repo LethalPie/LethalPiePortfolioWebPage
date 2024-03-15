@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import javascript from "../../assets/lang-logos/javascript.svg";
 import typescript from "../../assets/lang-logos/typescript.svg";
 import react from "../../assets/lang-logos/react.svg";
