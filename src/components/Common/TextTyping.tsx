@@ -84,10 +84,10 @@ const TextTyping: React.FC<TextTypingProps> = ({
 
   return (
     <>
-      {text.split("\n").map((line: string) => (
+      {text.split("\n").map((line: string, index) => (
         <>
           {line}
-          <br />
+          <br key={index} />
         </>
       ))}
     </>

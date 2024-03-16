@@ -28,7 +28,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Card.Body className="project-card-body d-flex flex-column justify-content-between">
         <Container>
           <Card.Title>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
+          <hr className="project-card-mobile-hr my-2" />
+          <Card.Text className="project-card-text">{description}</Card.Text>
         </Container>
         <Row className="d-flex justify-content-between">
           <Col>

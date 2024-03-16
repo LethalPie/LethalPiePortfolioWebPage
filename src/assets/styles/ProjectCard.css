@@ -4,10 +4,28 @@
   object-fit: cover;
 }
 
+.project-card-mobile-hr {
+  display: none;
+}
+
 .project-card-body {
   height: 225px;
 }
 
 .project-card-date {
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .project-card-body {
+    height: 200px;
+  }
+
+  .project-card-mobile-hr {
+    display: block;
+  }
+
+  .project-card-date {
+    font-size: 0.7rem;
+  }
 }

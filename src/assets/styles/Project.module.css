@@ -1,11 +1,15 @@
+.projectContainer {
+  min-height: 85vh;
+}
+
 .imageContainer {
   position: relative;
-  min-width: 10%;
-  max-width: 40%;
+  max-width: 500px;
 }
 
 .projectImage {
   height: auto;
+  width: 100%;
 }
 
 .overlay {
@@ -37,6 +41,6 @@
 @media (max-width: 768px) {
   .imageContainer {
     position: relative;
-    min-width: 100%;
+    width: 100%;
   }
 }

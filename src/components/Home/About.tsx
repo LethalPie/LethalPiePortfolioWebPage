@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Container } from "react-bootstrap";
 import AboutMeText from "../../data/AboutMe.txt";
 import PFP from "/assets/home/PFP.png";
 
@@ -16,17 +16,18 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Row />
       <Row>
         <Col md={1} className="d-none d-md-block" />
-        <Col md={3} className="justify-content-xs-center">
+        <Col md={3} className="d-flex flex-column justify-content-center">
           <Image src={PFP} fluid roundedCircle className="mb-4 shadow-lg" />
         </Col>
         <Col md={1} />
-        <Col md={6}>
-          {text.split("\n").map((line) => (
-            <p>{line}</p>
-          ))}
+        <Col md={6} className="d-flex flex-column justify-content-center">
+          <Container>
+            {text.split("\n").map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </Container>
         </Col>
         <Col md={1} className="d-none d-md-block" />
       </Row>

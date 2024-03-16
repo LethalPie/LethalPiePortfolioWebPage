@@ -7,6 +7,12 @@ const Projects: React.FC = () => {
   return (
     <Container>
       <Row>
+        <Col>
+          <h2>Projects</h2>
+        </Col>
+        <hr />
+      </Row>
+      <Row>
         {[...ProjectData.projects].reverse().map((project) => {
           return (
             <Col key={project.id} sm={6} md={4} lg={3}>

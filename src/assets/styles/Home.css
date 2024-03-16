@@ -3,11 +3,11 @@ h1 {
 }
 
 .head-section {
-  min-height: 85vh;
+  min-height: 65vh;
 }
 
 .about-section {
-  min-height: 95vh;
+  min-height: 100vh;
 }
 
 .project-section {
