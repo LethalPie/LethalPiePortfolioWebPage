@@ -12,7 +12,7 @@
     },
     {
       "id": "1",
-      "title": "Andriod Weather App",
+      "title": "Android Weather App",
       "short-description": "An Android app that fetches live weather of any location and save to the device.",
       "long-description":"This is my final project for my Mobile Development course at NSCC in 2023.  This project has a lot of great fundamentals in it that helped me understand the structure of an android application.  The application itself is a fully functional multi-screen weather applications that fetches to an API, parses the response model, and saves it to the device`s memory as an entity.  This was all done in Android Studio in Kotlin.\n\n  I am particularly proud of this project, not only because how smooth it feels but because of the project completion conditions.  I wanted to finish up some courses before I worked on a larger project for others, so I spent a day just working on this.  I felt as if it was a challenge, but a good challenge and it made me learn how everything was running more in depth than before.  The next day when I headed to class the prof announced that he was modifying the projects requirements because he felt as it was too hard for the class.  I emailed him abut this and he said it was fine.  I ended up finishing my Android course with a 100%.",
       "thumbnail": "/assets/project-images/weather-app-thumbnail.png",

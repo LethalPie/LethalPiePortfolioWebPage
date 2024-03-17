@@ -19,7 +19,7 @@ const Navigation: React.FC = () => {
     <Navbar expand="md" className="bg-body-secondary" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to={`/home`} className="fw-bold">
-          LETHAL PIE
+          ELIPHALET
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-sm`}
