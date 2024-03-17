@@ -18,12 +18,7 @@ const Navigation: React.FC = () => {
   return (
     <Navbar expand="md" className="bg-body-secondary" fixed="top">
       <Container>
-        <Navbar.Brand
-          as={NavHashLink}
-          to={`/home#top`}
-          scroll={(el: HTMLElement) => scrollWithOffset(el)}
-          className="fw-bold"
-        >
+        <Navbar.Brand as={Link} to={`/home`} className="fw-bold">
           LETHAL PIE
         </Navbar.Brand>
         <Navbar.Toggle

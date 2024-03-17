@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout.tsx";
 import Home from "./pages/Home.tsx";
+import Error from "./pages/Error.tsx";
 import Projects from "./pages/Projects.tsx";
 import Project from "./pages/Project.tsx";
 import Contact from "./pages/Contact.tsx";
@@ -17,6 +18,7 @@ function App() {
         { path: "project", element: <Projects /> },
         { path: "project/:id", element: <Project /> },
         { path: "contact", element: <Contact /> },
+        { path: "*", element: <Error /> },
       ],
     },
   ];

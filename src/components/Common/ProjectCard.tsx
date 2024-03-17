@@ -33,7 +33,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </Container>
         <Row className="d-flex justify-content-between">
           <Col>
-            <Button as={Link as any} to={`/project/${id}`} variant="primary">
+            <Button
+              as={Link as any}
+              to={`/project/${id}`}
+              className="project-card-button"
+            >
               See More
             </Button>
           </Col>

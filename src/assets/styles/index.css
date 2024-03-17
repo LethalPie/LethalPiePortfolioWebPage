@@ -13,13 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   /*Custom theming*/
-  --bs-body-bg: #8d0000;
+  --bs-body-bg: #b50300;
   --bs-body-color: #ffffff;
-  --bs-secondary-bg: #800020;
+  --bs-secondary-bg: #850800;
   --bs-secondary-bg-rgb: 128, 0, 32;
   --bs-emphasis-color: #ffffff;
   --bs-emphasis-color-rgb: 255, 255, 255;
-  --bs-btn-bg: #444444;
   --bs-link-color: #ffffff;
   --bs-link-color-rgb: 255, 255, 255;
   --bs-link-hover-color: #c0c0c0;
@@ -28,16 +27,33 @@
   --bs-font-sans-serif: "Kode mono";
 }
 
-@media (max-width: 768px) {
-  .card-img-top {
-    display: none;
-  }
-}
-
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
   background-color: var(--bs-body-bg);
+}
+
+.btn {
+  --bs-btn-color: #7e4718;
+  --bs-btn-bg: #eac08c;
+  --bs-btn-border-color: #d99046;
+  --bs-btn-hover-color: #714016;
+  --bs-btn-hover-bg: #e4af6c;
+  --bs-btn-hover-border-color: #d4822e;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #714016;
+  --bs-btn-active-bg: #e4af6c;
+  --bs-btn-active-border-color: #e4af6c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #7e4718;
+  --bs-btn-disabled-bg: #eac08c;
+  --bs-btn-disabled-border-color: #d99046;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    display: none;
+  }
 }

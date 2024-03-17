@@ -39,7 +39,7 @@
       "long-description":"Hello I`m Eliphalet!  My portfolio website is now live!  I am excited to have this website finally launched with some work samples to boot.  I`ll be periodically updating this website with project of note from my course at NSCC or any other project I am working on.\n\nThe website is 100% made by me in React + TypeScript.  The website is a project for me and the most important thing I learnt was how to style better.  My previous project in React was that pretty and I`m liking the look and feel of this website a lot more.  I also extended my knowledge in React this project and I feel like I have a deeper understanding of the framework than before.\n\nWant to connect with me?  Check me out on LinkedIn or give me an email if you want to work together or want a copy of my resume!",
       "thumbnail": "/assets/project-images/website-launched-thumbnail.png",
       "images": ["/assets/project-images/website-launched-0.png"],
-      "date": "16-03-2024",
+      "date": "17-03-2024",
       "lang-icons": ["/assets/lang-logos/react.svg", "/assets/lang-logos/typescript.svg"],
       "github": "https://github.com/LethalPie/LethalPiePortfolioWebPage"
     }
